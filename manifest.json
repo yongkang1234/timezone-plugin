@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "TimeConvert",
+    "version": "1.1",
+
+    "description": "A plugin that converts the time entered to the selected timezone.",
+
+    "content_scripts": [
+        {
+        "matches": ["<all_urls>"],
+        "js": ["main.js"]
+        }
+    ],
+
+    "browser_action": {
+    "default_icon": "icons/clock-line.png",
+    "default_title": "TimeConvert",
+    "default_popup": "/index.html"
+  }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeConvert</title>
+    <style>
+        div{
+            margin: 10px
+        }
+        label, p{
+            font-family: Arial, Helvetica, sans-serif
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div>
+            <label>
+                Date to convert:
+                <input type="date" id="input-date"></input>
+            </label>
+        </div>
+        <div>
+            <label>
+                Time to convert:
+                <input type="time" id="input-time"></input>
+            </label>
+        </div>
+        <div>
+            <label>
+                Timezone to convert to:
+                <select id="timezone-list">
+
+                </select>
+            </label>
+        </div>
+        <div>
+            <p id="converted-time">Converted time: </p>
+        </div>
+    </form>
+    <script src="./moment.min.js"></script>
+    <script src="./moment-timezone-with-data.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
